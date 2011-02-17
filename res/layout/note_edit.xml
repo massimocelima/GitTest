@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	>
+	
+	<ScrollView android:layout_width="match_parent" android:layout_height="1px" android:layout_weight="1" android:fillViewport="true">
+		<LinearLayout android:id="@+id/editors" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" > 
+	
+			<LinearLayout android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+		
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" 
+					android:text="@string/title" 
+					android:padding="5px"
+					android:minWidth="80px"
+					/>
+				<EditText android:id="@+id/title" 
+				  android:layout_width="wrap_content"
+					android:layout_height="wrap_content" 
+					android:layout_weight="1"
+					android:hint="Enter the title of the note"
+					/>
+			</LinearLayout>
+		
+			<LinearLayout android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" 
+					android:text="@string/body"
+					android:padding="5px"
+					android:minWidth="80px"
+					 />
+				<EditText android:id="@+id/body" android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:minHeight="100px"
+					android:scrollbars="vertical"
+					android:inputType="textMultiLine"
+					android:hint="Enter the body of the note"
+					/>
+			</LinearLayout>
+			
+	        <TextView
+	            style="?android:attr/listSeparatorTextViewStyle"
+	            android:text="Group Heading"
+	            android:layout_marginTop="5dip"
+	        />
+		
+			<LinearLayout android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+		
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" 
+					android:text="@string/title" 
+					android:padding="5px"
+					android:minWidth="80px"
+					/>
+				<EditText android:id="@+id/title2" 
+				  android:layout_width="wrap_content"
+					android:layout_height="wrap_content" 
+					android:layout_weight="1"
+					android:hint="Enter the title2 of the note"
+					/>
+			</LinearLayout>
+
+			<ImageView android:layout_width="match_parent" 
+			 	android:layout_height="wrap_content" 
+			 	android:scaleType="fitXY" 
+			 	android:gravity="fill_horizontal" 
+			 	android:src="@android:drawable/divider_horizontal_dark" /> 
+			
+			<LinearLayout android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+		
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" 
+					android:text="@string/title" 
+					android:padding="5px"
+					android:minWidth="80px"
+					/>
+				<EditText android:id="@+id/title3" 
+				  android:layout_width="wrap_content"
+					android:layout_height="wrap_content" 
+					android:layout_weight="1"
+					android:hint="Enter the title3 of the note"
+					/>
+			</LinearLayout>
+	
+	</LinearLayout>
+	 	
+	</ScrollView>
+
+	<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@android:style/ButtonBar">
+		<Button android:id="@+id/confirm" 
+			android:text="@string/confirm"
+			android:layout_width="0dip" 
+			android:layout_weight="1" 
+			android:layout_height="wrap_content" />
+		<Button android:id="@+id/btn_discard" 
+			android:layout_width="0dip" 
+			android:layout_height="wrap_content" 
+			android:layout_weight="1" 
+			android:text="Cancel" /> 
+	</LinearLayout>
+
+</LinearLayout>

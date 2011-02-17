@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"> 
+    <item android:id="@+id/notepad_menu_add" 
+          android:title="Add Note" 
+          android:icon="@drawable/ic_menu_add" 
+          />
+          
+    <item android:id="@+id/notepad_menu_edit" 
+          android:title="Edit Note" 
+          android:icon="@drawable/ic_menu_edit" 
+          />
+          
+    <item android:id="@+id/notepad_menu_delete" 
+          android:title="Delete Note" 
+          android:icon="@drawable/ic_menu_delete" 
+          />
+</menu>

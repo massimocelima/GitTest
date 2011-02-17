@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:orientation="vertical"
+    	>
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    	android:orientation="horizontal"
+	    	style="@style/PageHeader"
+	    	android:layout_height="wrap_content"
+	    	>
+
+	    <ImageView android:src="@drawable/ic_menu_allfriends"
+	    	android:layout_gravity="center_vertical"
+		  	android:layout_width="68dip" 
+  			android:layout_height="68dip">
+	    </ImageView>
+	  
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    	android:orientation="vertical"
+		    	style="@style/PageHeader"
+		    	android:padding="5px"
+	        	android:layout_height="wrap_content"
+		    	>
+	  		<TextView 
+		  		android:duplicateParentState="true"
+	          	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:layout_gravity="center_vertical"
+			  	android:textAppearance="?android:attr/textAppearanceLarge" 
+			  	android:textColor="?android:attr/textColorPrimary" 
+	        	android:text="Massimo Celima"/>
+	  		<TextView 
+		  		android:duplicateParentState="true"
+	          	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:layout_gravity="center_vertical"
+			  	android:textAppearance="?android:attr/textAppearanceSmall" 
+			  	android:textColor="?android:attr/textColorSecondary" 
+	        	android:text="59 Lance Hill Ave, Dunlop 2615, ACT"/>
+	  		<TextView 
+		  		android:duplicateParentState="true"
+	          	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:layout_gravity="center_vertical"
+			  	android:textAppearance="?android:attr/textAppearanceSmall" 
+			  	android:textColor="?android:attr/textColorSecondary" 
+	        	android:text="(02) 6258 2785"/>
+
+	  		<TextView 
+		  		android:duplicateParentState="true"
+	          	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:layout_gravity="center_vertical"
+			  	android:textAppearance="?android:attr/textAppearanceSmall" 
+			  	android:textColor="?android:attr/textColorSecondary" 
+	        	android:text="0410 308 497"/>
+	    
+		</LinearLayout>
+		
+	</LinearLayout>
+	
+	<ImageView android:layout_width="match_parent" 
+	 	android:layout_height="wrap_content" 
+	 	android:scaleType="fitXY" 
+	 	android:gravity="fill_horizontal" 
+	 	android:src="@android:drawable/divider_horizontal_dark" /> 
+
+    <ListView android:id="@+id/android:list"
+          android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"/>
+  	<TextView android:id="@+id/android:empty"
+          android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/no_notes"/>
+</LinearLayout>
